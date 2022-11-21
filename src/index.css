@@ -1,0 +1,113 @@
+@import url("https://fonts.googleapis.com/css2?family=Sono:wght@200;400;500&display=swap");
+
+:root {
+  --main-color: rgb(50 56 62);
+  --second-color: rgb(64, 69, 76);
+  --border: 1px solid rgb(28 28 28 / 60%);
+  --shadow: 1px 1px 1px rgb(0 0 0 / 30%);
+  --font-200: 200 1em "Sono", sans-serif;
+  --font-400: 400 1em "Sono", sans-serif;
+  --font-500: 500 1em "Sono", sans-serif;
+}
+
+body {
+  font: var(--font-200);
+  background-color: var(--main-color);
+  color: white;
+}
+
+.nav-logo img {
+  width: 70px;
+  filter: drop-shadow(1px 1px 3px #1983e6ce);
+}
+
+a,
+a:hover {
+  color: black;
+  text-decoration: none;
+}
+.game-details {
+  display: flex;
+  flex-direction: column;
+  min-width: 0;
+  word-wrap: break-word;
+  background-color: var(--second-color) !important;
+  background-clip: border-box;
+  border: 0 solid rgb(0 0 0 / 60%);
+  border-radius: 0.25rem;
+  margin: 1rem 0.1rem;
+
+}
+
+.game-details .body {
+  height: 130px;
+  overflow: scroll;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+}
+.game-details img {
+  height: 170px ;
+}
+
+.fullscreen-loading {
+  inset: 0;
+  position: absolute;
+  z-index: 999;
+  background-color: rgb(33, 31, 31);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.btnPlayNow, .btnPlayNow:hover {
+  background-image: linear-gradient(rgb(71 153 235),rgb(71 153 235) 60%,rgb(73 172 255));
+  background-repeat: no-repeat;
+  filter: none;
+  color: rgb(255 255 255);
+  background-color: rgb(71 153 235);
+  border-color: rgb(71 153 235);
+}
+
+.btnFree, .btnFree:hover {
+  color: rgb(170 170 170);
+  background-color: var(--second-color);
+  border-color: rgb(50 56 62);
+}
+
+.hero {
+  background: url(../src/Pages/assets/war.png);
+  background-repeat: no-repeat;
+  background-color: rgb(28 30 34);
+  background-position: top;
+  background-size: contain;
+  border-radius: 0.3rem;
+  margin-bottom: 1rem;
+  border: 1px solid rgb(0 0 0 / 60%);
+  padding: 4rem 2rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.carousel-games {
+  min-height: 200px;
+}
+
+.registerBtn:hover {
+ background: transparent;
+}
+
+.login .logo {
+  width: 100px;
+}
+
+.auth-layout {
+  background-color: var(--second-color);
+}
+.btn-block {
+  display: block;
+  width: 100%;
+}
